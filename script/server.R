@@ -13,19 +13,19 @@ shinyServer(function(input, output) {
   #     when inputs change
   #  2) Its output type is a plot
   
-  output$violinPlot <- renderPlot({
+  output$boxPlot <- renderPlot({
     
     plotTrait <- as.name(input$trait) # convert string to name
     
     # set up the plot
-    pl <- ggplot(data = iris,
-                 aes(x=Species,
+    pl <- ggplot(data = Tomato_data,
+                 aes(x=species,
                      y= !! plotTrait, # !! to use the column names contained in plotTrait
-                     fill=Species
+                     color=species
                  )
     )
     
     # draw the boxplot for the specified trait
-    pl + geom_violin()
+    pl + geom_boxplot()
   })
 })
