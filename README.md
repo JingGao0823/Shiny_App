@@ -1,3 +1,6 @@
 # Shiny_App
+## Link to the Shiny Web App:
+  
 ## Contributors:
-  Jing Gao (Test Commit and Push)
+  Jing Gao
+  
