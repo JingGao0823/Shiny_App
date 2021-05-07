@@ -7,9 +7,10 @@ shinyUI(fluidPage( #create the overall page
   titlePanel("Tomato Data"),
   
   # Some helpful information
-  helpText("This application creates a boxplot to show difference between",
-           "Tomato species.  Please use the radio box below to choose a trait",
-           "for plotting"),
+  helpText("This application creates a boxplot to show differences between",
+           "features of Tomato species.  Please use the radio box below to choose a trait",
+           "for plotting.", "The x-axis will be the sepcies of tomato, and the y-axis will",
+           "be the selected trait.", "The line in each box represents the median of the data."),
   
   # Sidebar with a radio box to input which trait will be plotted
   sidebarLayout(
