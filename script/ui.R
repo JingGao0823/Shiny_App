@@ -19,7 +19,8 @@ shinyUI(fluidPage( #create the overall page
                    c("Altitude"="alt",
                      "Height"="hyp",
                      "Leaf Length"="leafleng",
-                     "Leaf Width"="leafwid")
+                     "Leaf Width"="leafwid",
+                     "Leaf Number"="leafnum")
       )),
     
     # Show a plot of the generated distribution
