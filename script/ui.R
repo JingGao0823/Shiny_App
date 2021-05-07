@@ -17,10 +17,10 @@ shinyUI(fluidPage( #create the overall page
       radioButtons("trait", #the input variable that the value will go into
                    "Choose a trait to display:",
                    c("Altitude"="alt",
-                     "Height"="hyp",
+                     "Height"="totleng",
                      "Leaf Length"="leafleng",
                      "Leaf Width"="leafwid",
-                     "Leaf Number"="leafnum")
+                     "NDVI"="ndvi")
       )),
     
     # Show a plot of the generated distribution
